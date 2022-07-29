@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Whatsapp Conversation</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <main class="container">
-    <h1>Type the number above</h1>
-    <input type="tel" name="cellphone" id="cellphone">
-    <button>Start a Conversation</button>
-    <p>Made by Gigi.</p>
-  </main>
-  <script src="https://unpkg.com/imask"></script>
-  <script src="main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whatsapp Conversation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form class="container">
+      <h1>Type the number above</h1>
+      <input type="tel" name="cellphone" id="cellphone" />
+      <input
+        type="submit"
+        class="button"
+        id="button"
+        value="Start a Conversation"
+      />
+      <p class="error" id="error"></p>
+      <p>Made by Gigi.</p>
+    </form>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="main.js"></script>
+  </body>
 </html>
