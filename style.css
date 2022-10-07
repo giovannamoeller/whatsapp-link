@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
 h1 {
@@ -12,7 +12,7 @@ h1 {
 body {
   height: 100vh;
   background-color: #075e54;
-  color: #FFF;
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,7 +35,7 @@ input {
   padding-left: 1rem;
 }
 
-button {
+.button {
   margin-top: 4rem;
   width: 100%;
   height: 52px;
@@ -52,4 +52,8 @@ p {
   margin-top: 2rem;
   text-align: center;
   color: rgba(255, 255, 255, 0.2);
+}
+.error {
+  color: red;
+  font-weight: bold;
 }
