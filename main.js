@@ -1,16 +1,23 @@
 const button = document.querySelector('#button')
 const input = document.querySelector('input')
 const maskOptions = {
-    mask: '(00) 00000-0000'
+  mask: '(00) 00000-0000'
 }
 
 button.addEventListener('click', function (e) {
   e.preventDefault();
+
+
   let errorText = document.querySelector('#error');
-  if(input.value == '') {
-    errorText.innerHTML = 'Digite um número!';
+  let input = document.querySelector('input')
+  input.style.border = 'none'
+
+  if (input.value == '') {
+    errorText.innerHTML = 'Type a phone number!';
+    input.style.border = '2px solid #ed5463'
+
     return
-  }else {
+  } else {
     errorText.innerHTML = '';
   }
   const cellphoneNumber = input.value
